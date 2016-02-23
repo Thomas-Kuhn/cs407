@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_question_two"
+    tools:context="thomas_kuhn.simplequiz.QuestionTwoActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Whcih of the following is not a presidential candidate?"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bernie Sanders"
+        android:id="@+id/radioButton1"
+        android:layout_marginTop="59dp"
+        android:onClick="button1"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/radioButton2"
+        android:layout_alignStart="@+id/radioButton2" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hillary Clinton"
+        android:id="@+id/radioButton2"
+        android:layout_below="@+id/radioButton1"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:onClick="button2" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vermin Supreme"
+        android:id="@+id/radioButton3"
+        android:layout_below="@+id/radioButton2"
+        android:layout_alignLeft="@+id/radioButton2"
+        android:layout_alignStart="@+id/radioButton2"
+        android:onClick="button3" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Martin O&apos;Malley"
+        android:id="@+id/radioButton4"
+        android:layout_below="@+id/radioButton3"
+        android:layout_alignLeft="@+id/radioButton3"
+        android:layout_alignStart="@+id/radioButton3"
+        android:onClick="button4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Final Answer"
+        android:id="@+id/button2"
+        android:layout_below="@+id/radioButton4"
+        android:layout_centerHorizontal="true"
+        android:onClick="finalScreen"/>
+</RelativeLayout>

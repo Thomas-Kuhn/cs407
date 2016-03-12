@@ -9,6 +9,77 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_main" tools:context=".MainActivity">
 
-    <TextView android:text="Hello World!" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Events"
+        android:id="@+id/AddEvents"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:onClick="addEvent"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/ListEvents"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/findEvents"
+        android:layout_above="@+id/addText"
+        android:layout_alignParentEnd="true"
+        android:text="No Events to Show" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find Events"
+        android:id="@+id/findEvents"
+        android:layout_alignParentStart="true"
+        android:onClick="findEvents"
+        android:layout_below="@+id/dayText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/monthText"
+        android:text="Enter Month"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/dayText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dayText"
+        android:layout_below="@+id/monthText"
+        android:layout_alignParentStart="true"
+        android:text="Enter Day"
+        android:layout_alignEnd="@+id/findEvents" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remove Event"
+        android:id="@+id/removeEvent"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/findEvents"
+        android:onClick="removeEvent"
+        android:nestedScrollingEnabled="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/removeText"
+        android:layout_above="@+id/AddEvents"
+        android:layout_alignParentStart="true"
+        android:text="Event Number to Remove" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addText"
+        android:layout_above="@+id/removeText"
+        android:layout_alignParentStart="true"
+        android:text="Event to Add" />
+
 </RelativeLayout>

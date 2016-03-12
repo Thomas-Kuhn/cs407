@@ -82,4 +82,13 @@
         android:layout_alignParentStart="true"
         android:text="Event to Add" />
 
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/currDay"
+        android:layout_alignTop="@+id/monthText"
+        android:layout_alignStart="@+id/removeEvent"
+        android:selectAllOnFocus="true"
+        android:text="There is no day selected" />
+
 </RelativeLayout>

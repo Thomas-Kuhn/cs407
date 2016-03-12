@@ -45,9 +45,7 @@ public class Calendar {
                     temp = temp + split[i] + "//";
                 }
             }
-            if (temp.charAt(0) != '/'){
-                temp = "//" + temp;
-            }
+            
             calendarEvents.get(month).set(day, temp);
             System.out.println("new value:" + temp);
         }
